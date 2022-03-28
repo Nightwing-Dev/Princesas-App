@@ -1,0 +1,32 @@
+img {
+  height: 200px;
+  width: 250px;
+  background: red;
+  object-fit: cover;
+}
+
+.css {
+  background-color: blueviolet;
+  font-style: oblique;
+}
+
+.princesagrid {
+
+  display: flex;
+  flex-direction: column; 
+  div {
+     img {width: 160px;
+      border-radius: 20px;
+   }
+   h2, p{
+      margin: 0;
+   }
+  }
+}
+
+@media screen and (min-width: 40em){
+   .princesagrid {display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 15px;
+   }
+}
